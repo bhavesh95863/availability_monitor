@@ -1,0 +1,30 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "doc.status == \"Unreachable\"",
+ "creation": "2025-06-26 19:33:25.861359",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Availability Monitor",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<p>\ud83d\udea8 Attention!</p>\n\n<p>The site/server {{ doc.ip_or_domain }} is currently <strong>Unreachable</strong>.</p>\n\n<p>Last checked at: {{ doc.last_checked_at }}</p>\n\n<p>Please investigate the issue as soon as possible.</p>\n",
+ "message_type": "Markdown",
+ "modified": "2025-06-26 21:29:06.734718",
+ "modified_by": "Administrator",
+ "module": "Availability Monitor",
+ "name": "Site or Server Down",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "notify_email"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "Site/Server Down: {{ doc.ip_or_domain }}",
+ "value_changed": "status"
+}

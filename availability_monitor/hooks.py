@@ -144,6 +144,9 @@ app_license = "mit"
 # 		"on_trash": "method"
 # 	}
 # }
+scheduler_events = {
+    "cron": {"*/5 * * * *": ["availability_monitor.background_jobs.check_site_status"]}
+}
 
 # Scheduled Tasks
 # ---------------
@@ -241,4 +244,3 @@ app_license = "mit"
 # default_log_clearing_doctypes = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
-

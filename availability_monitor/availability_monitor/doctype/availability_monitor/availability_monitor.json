@@ -1,0 +1,95 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:ip_or_domain",
+ "creation": "2025-06-26 21:21:34.147872",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "ip_or_domain",
+  "check_interval",
+  "notify_email",
+  "column_break_sqja",
+  "check_mode",
+  "status",
+  "last_checked_at"
+ ],
+ "fields": [
+  {
+   "description": "- For 'ping' mode: enter domain or IP only (e.g., google.com or 8.8.8.8)<br>\n- For 'http' mode: enter full URL including http:// or https://\n",
+   "fieldname": "ip_or_domain",
+   "fieldtype": "Data",
+   "label": "IP/Domain",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "description": "Interval in minutes (e.g., 30, 60, etc)",
+   "fieldname": "check_interval",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Check Interval",
+   "reqd": 1
+  },
+  {
+   "fieldname": "notify_email",
+   "fieldtype": "Data",
+   "label": "Downtime Notification To",
+   "options": "Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_sqja",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "check_mode",
+   "fieldtype": "Select",
+   "label": "Check Mode",
+   "options": "\nping\nhttp",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "no_copy": 1,
+   "options": "\nOnline\nUnreachable",
+   "read_only": 1
+  },
+  {
+   "fieldname": "last_checked_at",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Last Checked At",
+   "no_copy": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-06-26 21:28:50.139235",
+ "modified_by": "Administrator",
+ "module": "Availability Monitor",
+ "name": "Availability Monitor",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
