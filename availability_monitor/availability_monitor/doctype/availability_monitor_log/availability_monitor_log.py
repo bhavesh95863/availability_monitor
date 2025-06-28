@@ -24,4 +24,4 @@ def create_log_entry(
             "error_message": error_message,
             "attempt_number": attempt_number,
         }
-    ).insert(ignore_permissions=True)
+    ).insert(ignore_permissions=True, ignore_links=True)

@@ -8,6 +8,7 @@ from availability_monitor.utils import (
     is_host_reachable_by_ping,
     is_host_reachable_by_http,
 )
+from frappe.utils import cint
 from availability_monitor.availability_monitor.doctype.availability_monitor_log.availability_monitor_log import (
     create_log_entry,
 )
@@ -43,12 +44,13 @@ class AvailabilityMonitor(Document):
                 )
 
         # Validate retry limits
-        if self.retry_attempts > 5:
+        if self.retry_attempts and cint(self.retry_attempts) > 5:
             frappe.throw("Retry attempts should not exceed 5.")
 
         if self.is_new():
             is_up, response_time, error_msg, attempt = self.check_site_status(
-                retries=self.retry_attempts or 3, delay=self.retry_delay or 2
+                retries=cint(self.retry_attempts or 3),
+                delay=cint(self.retry_delay or 2),
             )
             self.status = "Online" if is_up else "Unreachable"
             self.last_checked_at = datetime.now()

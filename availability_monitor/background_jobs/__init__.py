@@ -9,6 +9,7 @@ from availability_monitor.utils import (
 from availability_monitor.availability_monitor.doctype.availability_monitor_log.availability_monitor_log import (
     create_log_entry,
 )
+from frappe.utils import cint
 
 
 def check_site_status():
@@ -31,8 +32,8 @@ def check_site_status():
         host = monitor.ip_or_domain
         check_mode = monitor.check_mode or "ping"
         interval = monitor.check_interval or 30
-        retries = monitor.retry_attempts or 3
-        delay = monitor.retry_delay or 2
+        retries = cint(monitor.retry_attempts or 3)
+        delay = cint(monitor.retry_delay or 2)
         last_checked = monitor.last_checked_at or (
             now - timedelta(minutes=interval + 1)
         )

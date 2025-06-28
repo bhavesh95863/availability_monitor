@@ -43,7 +43,7 @@
    "type": "Link"
   }
  ],
- "modified": "2025-06-28 16:09:39.204800",
+ "modified": "2025-06-28 16:23:51.936559",
  "modified_by": "Administrator",
  "module": "Availability Monitor",
  "name": "Monitoring",
@@ -65,7 +65,11 @@
  "parent_page": "",
  "public": 1,
  "quick_lists": [],
- "roles": [],
+ "roles": [
+  {
+   "role": "Monitor Customer"
+  }
+ ],
  "sequence_id": 24.0,
  "shortcuts": [],
  "title": "Monitoring"
