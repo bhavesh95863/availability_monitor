@@ -1,0 +1,32 @@
+{
+ "chart_name": "Uptime % per Monitor",
+ "chart_type": "Report",
+ "creation": "2025-06-28 15:47:15.665245",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart",
+ "dynamic_filters_json": "{}",
+ "filters_json": "{}",
+ "group_by_type": "Count",
+ "idx": 0,
+ "is_public": 1,
+ "is_standard": 1,
+ "modified": "2025-06-28 15:47:15.665245",
+ "modified_by": "Administrator",
+ "module": "Availability Monitor",
+ "name": "Uptime % per Monitor",
+ "number_of_groups": 0,
+ "owner": "Administrator",
+ "report_name": "Uptime Per Monitor",
+ "roles": [],
+ "time_interval": "Yearly",
+ "timeseries": 0,
+ "timespan": "Last Year",
+ "type": "Line",
+ "use_report_chart": 0,
+ "x_field": "monitor",
+ "y_axis": [
+  {
+   "y_field": "uptime_percent"
+  }
+ ]
+}

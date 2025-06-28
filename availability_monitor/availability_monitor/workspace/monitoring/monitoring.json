@@ -1,0 +1,72 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"H-hKnIG3RS\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Monitoring</span>\",\"col\":12}},{\"id\":\"ezsSxKSs8E\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Online Monitors\",\"col\":4}},{\"id\":\"kaCfwNxwBE\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Unreachable Monitors\",\"col\":4}},{\"id\":\"PR6_W4MadQ\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Avg. Response Time Today\",\"col\":4}},{\"id\":\"qpMZdm9Emw\",\"type\":\"card\",\"data\":{\"card_name\":\"Monitoring\",\"col\":4}}]",
+ "creation": "2025-06-28 16:00:28.442115",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "solid-success",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Monitoring",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Monitoring",
+   "link_count": 2,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Availability Monitor",
+   "link_count": 0,
+   "link_to": "Availability Monitor",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Availability Monitor Log",
+   "link_count": 0,
+   "link_to": "Availability Monitor Log",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2025-06-28 16:09:39.204800",
+ "modified_by": "Administrator",
+ "module": "Availability Monitor",
+ "name": "Monitoring",
+ "number_cards": [
+  {
+   "label": "Online Monitors",
+   "number_card_name": "Online Monitors"
+  },
+  {
+   "label": "Avg. Response Time Today",
+   "number_card_name": "Avg. Response Time (24h)"
+  },
+  {
+   "label": "Unreachable Monitors",
+   "number_card_name": "Unreachable Monitors"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 24.0,
+ "shortcuts": [],
+ "title": "Monitoring"
+}

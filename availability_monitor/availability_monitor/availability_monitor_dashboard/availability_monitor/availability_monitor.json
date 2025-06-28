@@ -1,0 +1,21 @@
+{
+ "cards": [],
+ "charts": [
+  {
+   "chart": "Uptime % per Monitor",
+   "width": "Full"
+  }
+ ],
+ "creation": "2025-06-28 15:47:41.709510",
+ "dashboard_name": "Availability Monitor",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2025-06-28 15:47:41.709510",
+ "modified_by": "Administrator",
+ "module": "Availability Monitor",
+ "name": "Availability Monitor",
+ "owner": "Administrator"
+}

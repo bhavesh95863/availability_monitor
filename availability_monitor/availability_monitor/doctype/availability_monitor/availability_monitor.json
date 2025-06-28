@@ -12,7 +12,11 @@
   "column_break_sqja",
   "check_mode",
   "status",
-  "last_checked_at"
+  "last_checked_at",
+  "other_settings_tab",
+  "retry_attempts",
+  "column_break_ityd",
+  "retry_delay"
  ],
  "fields": [
   {
@@ -65,11 +69,41 @@
    "label": "Last Checked At",
    "no_copy": 1,
    "read_only": 1
+  },
+  {
+   "fieldname": "other_settings_tab",
+   "fieldtype": "Tab Break",
+   "label": "Other Settings"
+  },
+  {
+   "default": "3",
+   "description": "Total retry attempts (max: 5 recommended)",
+   "fieldname": "retry_attempts",
+   "fieldtype": "Select",
+   "label": "Retry Attempts",
+   "options": "1\n2\n3\n4\n5"
+  },
+  {
+   "fieldname": "column_break_ityd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "2",
+   "fieldname": "retry_delay",
+   "fieldtype": "Select",
+   "label": "Retry Delay (s)",
+   "options": "1\n2\n3\n4\n5"
   }
  ],
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2025-06-26 21:28:50.139235",
+ "links": [
+  {
+   "group": "Logs",
+   "link_doctype": "Availability Monitor Log",
+   "link_fieldname": "availability_monitor"
+  }
+ ],
+ "modified": "2025-06-28 15:32:54.099677",
  "modified_by": "Administrator",
  "module": "Availability Monitor",
  "name": "Availability Monitor",

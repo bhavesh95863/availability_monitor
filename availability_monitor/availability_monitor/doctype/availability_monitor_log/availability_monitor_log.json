@@ -1,0 +1,96 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-06-28 15:07:35.941123",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "availability_monitor",
+  "check_mode",
+  "check_time",
+  "attempt_number",
+  "column_break_behm",
+  "response_time",
+  "result",
+  "error_message"
+ ],
+ "fields": [
+  {
+   "fieldname": "availability_monitor",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Availability Monitor",
+   "options": "Availability Monitor",
+   "read_only": 1
+  },
+  {
+   "fieldname": "check_mode",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Check Mode",
+   "options": "\nping\nhttp",
+   "read_only": 1
+  },
+  {
+   "fieldname": "check_time",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Check Time",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_behm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "response_time",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Response Time (s)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "result",
+   "fieldtype": "Select",
+   "label": "Result",
+   "read_only": 1
+  },
+  {
+   "fieldname": "error_message",
+   "fieldtype": "Small Text",
+   "label": "Error Message",
+   "read_only": 1
+  },
+  {
+   "fieldname": "attempt_number",
+   "fieldtype": "Read Only",
+   "label": "Attempt Number"
+  }
+ ],
+ "in_create": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-06-28 16:11:39.324464",
+ "modified_by": "Administrator",
+ "module": "Availability Monitor",
+ "name": "Availability Monitor Log",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
